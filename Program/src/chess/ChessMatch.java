@@ -35,7 +35,7 @@ public class ChessMatch {
         }
         return mat;
     }
-    public ChessPiece performChessMove(ChessPosition sourcePosition, ChessPosition targetPosition){
+    public ChessPiece performChessMove(ChessPosition sourcePosition, ChessPosition targetPosition) throws ChessException{
         Position source = sourcePosition.toPosition();
         Position target = targetPosition.toPosition();
         
@@ -66,7 +66,7 @@ public class ChessMatch {
         //        colocando peça apartir da matrix
         //        board.placePiece(new King(board, Color.WHITE), new Position(7, 4));
 
-		placeNewPiece('c', 1, new Rook(board, Color.WHITE));
+        placeNewPiece('c', 1, new Rook(board, Color.WHITE));
         placeNewPiece('c', 2, new Rook(board, Color.WHITE));
         placeNewPiece('d', 2, new Rook(board, Color.WHITE));
         placeNewPiece('e', 2, new Rook(board, Color.WHITE));
